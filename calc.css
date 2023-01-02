@@ -1,0 +1,20 @@
+.container{
+    text-align: center;
+    
+}
+button{
+  padding: 1.5%;
+   width: 10%;
+   border: none;
+   background-color: white;
+   box-shadow: 1px 1px 20px 1px grey;
+   border-radius: 10%;
+}
+input{
+    width: 41%;
+    padding: 3% 0;
+    text-align: right;
+    box-shadow: 1px 1px 20px 1px grey;
+    font-size: 50px;
+    border: 2px solid rgb(247, 141, 103);
+}
