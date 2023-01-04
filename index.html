@@ -1,56 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="calc.css">
 </head>
 
 <body>
-    <div class="container mt-2">
-
-    <input type="text" id="output">
-    <div>
-        <button style="font-weight: 500;font-size: 130%;" onclick="van()">C</button>
-        <button style="font-weight: 500;font-size: 130%;" onclick="display('%')">%</button>
-        <button style="font-weight: 500;font-size: 130%;" onclick="del()">D</button>
-        <button style="font-weight: 500;font-size: 130%;" onclick="display('/')">&divide;</button>
-
+    <div class="main d-flex align-items-center justify-content-center">
+        <div id="hideClick" class=""><h1 style="color: aliceblue;">Hello! Pal</h1>
+            <button onclick="classChange()">Let's Calculate</button>
+        </div>
+        <div id="hideOn" class="container hide">
+            <div class="result"><input id="output" type="text"></div>
+            <div class="cell">
+                <div onclick="cleares()" class="calc">C</div>
+                <div onclick="display('%')" class="calc">%</div>
+                <div onclick="deletes()" class="calc">D</div>
+                <div onclick="display('/')" class="calc">&divide;</div>
+            </div>
+            <div class="cell">
+                <div onclick="display('7')">7</div>
+                <div onclick="display('8')">8</div>
+                <div onclick="display('9')">9</div>
+                <div onclick="display('*')" class="calc">&times;</div>
+            </div>
+            <div class="cell">
+                <div onclick="display('4')">4</div>
+                <div onclick="display('5')">5</div>
+                <div onclick="display('6')">6</div>
+                <div onclick="display('-')" class="calc">-</div>
+            </div>
+            <div class="cell">
+                <div onclick="display('1')">1</div>
+                <div onclick="display('2')">2</div>
+                <div onclick="display('3')">3</div>
+                <div onclick="display('+')" class="calc">+</div>
+            </div>
+            <div class="cell">
+                <div onclick="display('00')">00</div>
+                <div onclick="display('0')">0</div>
+                <div onclick="display('.')">.</div>
+                <div onclick="result()" class="equal">=</div>
+            </div>
+        </div>
     </div>
-    <div>
-        <button onclick="display('7')">7</button>
-        <button onclick="display('8')">8</button>
-        <button onclick="display('9')">9</button>
-        <button style="font-weight: 500;font-size: 130%;" onclick="display('*')">&times;</button>
 
-    </div>
-    <div>
-        <button onclick="display('4')">4</button>
-        <button onclick="display('5')">5</button>
-        <button onclick="display('6')">6</button>
-        <button style="font-weight: 500;font-size: 130%;" onclick="display('-')">-</button>
-
-    </div>
-    <div>
-        <button onclick="display('1')">1</button>
-        <button onclick="display('2')">2</button>
-        <button onclick="display('3')">3</button>
-        <button style="font-weight: 500;font-size: 130%;" onclick="display('+')">+</button>
-
-    </div>
-    <div>
-        <button onclick="display('00')">00</button>
-        <button onclick="display('0')">0</button>
-        <button onclick="display('.')">.</button>
-        <button style="font-weight: 500;font-size: 130%; background-color: orangered;" onclick="calculate()">=</button>
-
-    </div>
-    
-    </div>
 </body>
-
 <script src="calc.js"></script>
 
 </html>

@@ -1,21 +1,26 @@
-let outputs=document.getElementById("output");
-let display = (num) => {
-    outputs.value += num
+function classChange(){
+    document.getElementById("hideClick").classList.add('hide');
+    document.getElementById("hideOn").classList.remove('hide');
 }
-let calculate = () =>{
-    try{
-        outputs.value = eval(outputs.value);
 
+let output=document.getElementById("output");
+
+let display=(num)=>{
+    output.value+=num;
+}
+
+const result=()=>{
+    try {
+        output.value=eval(output.value);    
+    } catch (error) {
+        alert("Wrong Opration")
     }
-    catch(err){
-        alert ("invalid operation")
-    }
+    
 }
 
-let van=()=>{
-    outputs.value="";
+let deletes=()=>{
+    output.value=output.value.slice(0,-1);
 }
-
-let del = ()=>{
-    outputs.value = outputs.value.slice(0,-1);  
+let cleares=()=>{
+    output.value=""
 }
