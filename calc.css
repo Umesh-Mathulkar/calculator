@@ -102,4 +102,11 @@ input {
         height: 70px;
         width: 100px;
     }
+    .cell div:hover {
+        /* height: 41px;
+        width: 61px; */
+        transition-duration: 0;
+        background-color: rgb(255, 115, 0);
+        box-shadow: 1px 1px 1px 1px rgb(177, 63, 34);
+    }
 }
