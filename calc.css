@@ -106,6 +106,9 @@ input {
     background-color:inherit;
     box-shadow:inherit;
     } */
+    body{
+        background: none;
+    }
 }
 /* @media (hover:none){
     .cell div:hover{
