@@ -1,75 +1,105 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: url(./calc.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    
+
 }
-.container{
-    height: 300px;
-    width: 300px!important;
+
+.container {
+    height: 500px;
+    width: 500px !important;
     background-color: black;
     opacity: 97%;
     box-shadow: 1px 1px 10px rgb(32, 31, 31);
     -webkit-animation: fadein 1s;
 }
+
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-.cell div{
+.cell {
+    text-align: center;
+}
+.cell div {
     display: inline-block;
     margin: 2px;
     background-color: aliceblue;
-    height: 40px;
-    width: 60px;
-    line-height: 35px;
+    height: 73px;
+    width: 110px;
+    line-height: 75px;
     text-align: center;
     cursor: pointer;
+    font-size: 30px;
 }
-.cell div:hover{
-    height: 41px;
-    width: 61px;
+
+.cell div:hover {
+    /* height: 41px;
+    width: 61px; */
     transition-duration: 0.1s;
     background-color: rgb(255, 115, 0);
     box-shadow: 1px 1px 1px 1px rgb(177, 63, 34);
 }
-input{
-    width: 270px;
-    height: 50px;
+
+input {
+    width: 450px;
+    height: 80px;
     box-shadow: 1px 1px 1px 2px rgb(196, 196, 196);
 }
-.result{
-    margin:10px 0;
+
+.result {
+    margin: 10px 0;
 }
-.main{
-    height: 370px;
+
+.main {
+    height: 600px;
 }
-.calc{
-    background-color: rgb(85, 125, 235)!important;
+
+.calc {
+    background-color: rgb(85, 125, 235) !important;
+    font-weight: 700;
 }
-.equal{
-    background-color: orangered!important;
+
+.equal {
+    background-color: orangered !important;
 }
-.hide{
+
+.hide {
     display: none;
 }
-#hideClick{
+
+#hideClick {
     border: 3px solid black;
     padding: 14%;
-    background-color:rgba(97, 96, 96, 0.5);
+    background-color: rgba(97, 96, 96, 0.5);
     border-radius: 3%;
 }
-#hideClick button{
+
+#hideClick button {
     margin-left: 10px;
     padding: 10px;
     opacity: 100%;
     border-radius: 10%;
 }
-#hideClick button:hover{
+
+#hideClick button:hover {
     background-color: orangered;
     transition-duration: 0.5s;
+}
+
+@media only screen and (max-width:767px) {
+    .cell div {
+        height: 70px;
+        width: 100px;
+    }
 }
