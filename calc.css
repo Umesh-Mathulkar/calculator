@@ -43,12 +43,12 @@ body {
     font-size: 30px;
 }
 
-.cell div:hover {
+/* .cell div:hover {
     
     transition-duration: 0.5s;
     background-color: rgb(255, 115, 0);
     box-shadow: 1px 1px 1px 1px rgb(177, 63, 34);
-}
+} */
 
 input {
     width: 450px;
@@ -101,16 +101,16 @@ input {
         height: 70px;
         width: 100px;
     }
-    .cell div:hover{
-        transition-duration: inherit;
+    /* .cell div:hover{
+        transition-duration: 0s;
     background-color:inherit;
     box-shadow:inherit;
-    }
+    } */
 }
-@media (hover:none){
+/* @media (hover:none){
     .cell div:hover{
         transition-duration: 0s;
     background-color:inherit;
     box-shadow:inherit;
     }
-}
+} */
